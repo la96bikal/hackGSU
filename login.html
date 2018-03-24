@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Login Form</title>
+    </head>
+    <style type="text/css">
+    	body{
+    background: url('https://images4.alphacoders.com/758/thumb-1920-75886.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 500px;
+    height: 400px;
+    margin-top: 150px;
+    margin-left: 450px;
+    background: rgba(15,15,88,0.7);
+    border-radius: 15px;
+    text-align: center;
+}
+.container img{
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+input[type="text"],input[type="password"]{
+    width: 240px;
+    height: 44px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 1px solid #000;
+    padding-left: 45px;
+}
+input[type="submit"]{
+    padding: 15px 25px;
+    background: #150;
+    color: #fff;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #150;
+}
+.cust{
+    position: absolute;
+    background: #fff;
+    margin-right: 18px;
+    margin-top: 1px;
+    width: 44px;
+    height: 36px;
+    padding-top: 8px;
+    border: 1px solid #fff;
+}
+    </style>
+    <body>
+        <div class="container">
+            <img src="https://cdn0.iconfinder.com/data/icons/user-pictures/100/malecostume-256.png" alt="Avatar">
+            <form>
+                <div class="form-input">
+                    <i class="fa fa-user fa-2x cust" aria-hidden="true"></i>
+                    <input type="text" name="uname" value="" placeholder="Enter Username" required><br />
+                    <i class="fa fa-lock fa-2x cust" aria-hidden="true"></i>
+                    <input type="password" name="pass" value="" placeholder="Enter Password"><br />
+                    <input type="submit" name="submit" value="LOGIN"><br />
+                    <a href="#">Forget Password</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
