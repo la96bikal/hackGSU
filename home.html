@@ -1,0 +1,284 @@
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js">
+</script>
+
+<script type="text/javascript">
+  var t1=1;
+  var t2=1;
+    var t3=1;
+  var t4=1;
+  var t5=1;
+   var myemotion=0;
+function x(){
+  return myemotion;
+}
+  function set(t){
+    if(t=='toggle1')
+    {
+      if((t1)%2==0){
+        myemotion=10;
+      alert("10");
+      document.getElementById('toggle2').style.visibility="visible";
+      document.getElementById('toggle3').style.visibility="visible";
+      document.getElementById('toggle4').style.visibility="visible";
+      document.getElementById('toggle5').style.visibility="visible";
+      t1=t1+1;
+}
+else{
+  alert("9");
+   myemotion=9;
+      document.getElementById('toggle2').style.visibility="hidden";
+      document.getElementById('toggle3').style.visibility="hidden";
+      document.getElementById('toggle4').style.visibility="hidden";
+      document.getElementById('toggle5').style.visibility="hidden";
+      t1=t1+1;
+}
+    }
+    else if(t=='toggle2')
+    {
+ if((t2)%2==0){
+      alert("8");
+       myemotion=8;
+      document.getElementById('toggle1').style.visibility="visible";
+      document.getElementById('toggle3').style.visibility="visible";
+      document.getElementById('toggle4').style.visibility="visible";
+      document.getElementById('toggle5').style.visibility="visible";
+      t2=t2+1;
+}
+else{
+  alert("7");
+   myemotion=7;
+      document.getElementById('toggle1').style.visibility="hidden";
+      document.getElementById('toggle3').style.visibility="hidden";
+      document.getElementById('toggle4').style.visibility="hidden";
+      document.getElementById('toggle5').style.visibility="hidden";
+      t2=t2+1;
+}
+    }
+    else if(t=='toggle3')
+    {
+ if((t3)%2==0){
+      alert("6");
+       myemotion=6;
+      document.getElementById('toggle2').style.visibility="visible";
+      document.getElementById('toggle1').style.visibility="visible";
+      document.getElementById('toggle4').style.visibility="visible";
+      document.getElementById('toggle5').style.visibility="visible";
+      t3=t3+1;
+}
+else{
+  alert("5");
+   myemotion=5;
+      document.getElementById('toggle2').style.visibility="hidden";
+      document.getElementById('toggle1').style.visibility="hidden";
+      document.getElementById('toggle4').style.visibility="hidden";
+      document.getElementById('toggle5').style.visibility="hidden";
+      t3=t3+1;
+}
+    }
+    else if(t=='toggle4')
+    {
+ if((t4)%2==0){
+      alert("4");
+       myemotion=4;
+      document.getElementById('toggle2').style.visibility="visible";
+      document.getElementById('toggle3').style.visibility="visible";
+      document.getElementById('toggle1').style.visibility="visible";
+      document.getElementById('toggle5').style.visibility="visible";
+      t4=t4+1;
+}
+else{
+  alert("3");
+   myemotion=3;
+      document.getElementById('toggle2').style.visibility="hidden";
+      document.getElementById('toggle3').style.visibility="hidden";
+      document.getElementById('toggle1').style.visibility="hidden";
+      document.getElementById('toggle5').style.visibility="hidden";
+      t4=t4+1;
+}
+    }
+    else
+    {
+ if((t4)%2==0){
+      alert("2");
+       myemotion=2;
+      document.getElementById('toggle2').style.visibility="visible";
+      document.getElementById('toggle3').style.visibility="visible";
+      document.getElementById('toggle1').style.visibility="visible";
+      document.getElementById('toggle4').style.visibility="visible";
+      t4=t4+1;
+}
+else{
+  alert("1");
+   myemotion=1;
+      document.getElementById('toggle2').style.visibility="hidden";
+      document.getElementById('toggle3').style.visibility="hidden";
+      document.getElementById('toggle1').style.visibility="hidden";
+      document.getElementById('toggle4').style.visibility="hidden";
+      t4=t4+1;
+}
+    }
+  }
+</script>
+<style type="text/css">
+@charset "UTF-8";
+#txtarea{
+  margin-left:500px;
+  width:40%;
+         
+}
+
+#sub{
+   margin-left:700px;
+   width:10%;
+}
+.emoji-toggle {
+  position: relative;
+  width: 60px;
+  margin: 40px auto;
+}
+.emoji-toggle .well {
+  display: block;
+  background: #eee;
+  height: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.emoji-toggle .toggle {
+  opacity: 0;
+  border: 0;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  cursor: pointer;
+  z-index: 100;
+}
+.emoji-toggle .toggle ~ .emoji:before {
+  content: "\01F431";
+  position: absolute;
+  left: 0;
+  top: -15px;
+  font-size: 40px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.emoji-toggle .toggle:checked ~ .emoji:before {
+  left: 100%;
+  margin-left: -1em;
+}
+.emoji-toggle .toggle ~ label {
+  white-space: nowrap;
+}
+.emoji-toggle .toggle ~ label:before {
+  position: absolute;
+  right: 100%;
+  margin-right: 5px;
+  top: 0;
+}
+.emoji-toggle .toggle ~ label:after {
+  position: absolute;
+  left: 100%;
+  margin-left: 5px;
+  top: 0;
+}
+.emoji-happy .toggle ~ .emoji:before {
+  content: "😄";
+}
+.emoji-happy .toggle:checked ~ .emoji:before {
+  content: "🤩";
+}
+.emoji-happy .toggle ~ label:before {
+  content: "Very Happy";
+}
+.emoji-happy .toggle ~ label:after {
+  content: "Utmost Happy";
+}
+.emoji-travel .toggle ~ .emoji:before {
+  content: "🙂";
+}
+.emoji-travel .toggle:checked ~ .emoji:before {
+  content: "😌";
+}
+.emoji-travel .toggle ~ label:before {
+  content: "Happy";
+}
+.emoji-travel .toggle ~ label:after {
+  content: "Almost Happy";
+}
+.emoji-food .toggle ~ .emoji:before {
+  content: "😐";
+}
+.emoji-food .toggle:checked ~ .emoji:before {
+  content: "😑";
+}
+.emoji-food .toggle ~ label:before {
+  content: "No happiness";
+}
+.emoji-food .toggle ~ label:after {
+  content: "No sadness";
+}
+.emoji-vote .toggle ~ .emoji:before {
+  content: "🙁";
+}
+.emoji-vote .toggle:checked ~ .emoji:before {
+  content: "😞";
+}
+.emoji-vote .toggle ~ label:before {
+  content: "Little sad";
+}
+.emoji-vote .toggle ~ label:after {
+  content: "Sadness High";
+}
+.emoji-love .toggle ~ .emoji:before {
+  content: "😟";
+}
+.emoji-love .toggle:checked ~ .emoji:before {
+  content: "😖";
+}
+.emoji-love .toggle ~ label:before {
+  content: "Very Sad";
+}
+.emoji-love .toggle ~ label:after {
+  content: "Sad sad sad";
+}
+</style>
+<div class="emoji-toggle emoji-happy">
+  <input type="checkbox" id="toggle1" class="toggle" onclick= "set(this.id);">
+  <div class="emoji"></div>
+  <label for="toggle1" class="well"></label>
+</div>
+
+<div class="emoji-toggle emoji-travel">
+  <input type="checkbox" id="toggle2" class="toggle" onclick= "set(this.id);">
+  <div class="emoji"></div>
+  <label for="toggle2" class="well"></label>
+</div>
+
+<div class="emoji-toggle emoji-food">
+  <input type="checkbox" id="toggle3" class="toggle" onclick= "set(this.id);">
+  <div class="emoji"></div>
+  <label for="toggle3" class="well"></label>
+</div>
+
+<div class="emoji-toggle emoji-vote">
+  <input type="checkbox" id="toggle4" class="toggle" onclick= "set(this.id);">
+  <div class="emoji"></div>
+  <label for="toggle4" class="well"></label>
+</div>
+
+<div class="emoji-toggle emoji-love">
+  <input type="checkbox" id="toggle5" class="toggle" onclick= "set(this.id);">
+  <div class="emoji"></div>
+  <label for="toggle5" class="well"></label>
+</div>
+<form>
+<input type="textarea" id="txtarea" placeholder="How are u feeling about your Associate experience at Anthem today?">
+
+<p><input type="submit" palceholder="rate" id="sub" onclick="alert(x());"></p>
+</form>
+
+
+</html>
